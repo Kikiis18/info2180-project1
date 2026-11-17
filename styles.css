@@ -5,10 +5,10 @@
 
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.6;
     color: #24313a;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 }
 
 img {
@@ -27,8 +27,9 @@ a {
 }
 
 header {
-    background: #fff;
+    background: white;
     padding: 1rem 0;
+    font-size: 18px;
 }
 
 header .container {
@@ -40,7 +41,7 @@ header .container {
 
 header h1 {
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 18px;
 }
 
 nav ul {
@@ -53,13 +54,13 @@ nav ul {
 }
 
 nav a {
-    color: inherit;
+    color: #6b7280;
     text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus {
-    color: #1498a7;
+    color: #5A67D8;
 }
 
 main > section {
@@ -67,7 +68,7 @@ main > section {
 }
 
 .overview-hero {
-    background: #eef7f7;
+    background: #E2E8F0;
 }
 
 .overview-hero .container {
@@ -101,6 +102,15 @@ main > section {
     text-align: center;
 }
 
+.learn-about h2 {
+    color: #48BB78;
+    font-size: 24px;
+}
+
+.stories > .container > h2 {
+    color: #5A67D8;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -109,9 +119,10 @@ main > section {
 
 .card {
     overflow: hidden;
-    border: 1px solid #dce5e8;
-    border-radius: 0.5rem;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
     background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
 
 .card > img {
@@ -126,6 +137,8 @@ main > section {
 
 .card-body h3 {
     margin: 0 0 0.5rem;
+    color: #48BB78;
+    font-size: 21px;
 }
 
 .card-body p {
@@ -133,7 +146,7 @@ main > section {
 }
 
 .testing {
-    background: #123d48;
+    background: #4A5568;
     color: #fff;
 }
 
@@ -171,8 +184,9 @@ main > section {
 
 .testing .btn {
     white-space: nowrap;
-    background: #fff;
-    color: #123d48;
+    background: #48BB78;
+    border-radius: 5px;
+    color: #fff;
 }
 
 .stories article {
@@ -191,11 +205,11 @@ main > section {
 }
 
 .stories article > img {
-    flex: 0 0 34%;
-    width: 34%;
+    flex: 0 0 230px;
+    width: 230px;
     height: 230px;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 50%;
 }
 
 .article-body {
@@ -205,10 +219,16 @@ main > section {
 
 .article-body h3 {
     margin-top: 0;
+    font-size: 18px;
+}
+
+.article-body a {
+    color: #5A67D8;
 }
 
 .newsletter {
-    background: #eef7f7;
+    background: #48BB78;
+    color: #fff;
     text-align: center;
 }
 
@@ -240,13 +260,17 @@ main > section {
     font: inherit;
 }
 
+.newsletter .btn {
+    background: #5A67D8;
+}
+
 .message {
     margin-top: 1rem;
 }
 
 footer {
     padding: 1.25rem 0;
-    background: #123d48;
+    background: #4A5568;
     color: #fff;
 }
 
@@ -274,11 +298,6 @@ footer p {
 
     .stories article {
         gap: 1.25rem;
-    }
-
-    .stories article > img {
-        flex-basis: 38%;
-        width: 38%;
     }
 }
 
@@ -310,8 +329,10 @@ footer p {
     }
 
     .stories article > img {
-        width: 100%;
+        flex-basis: 220px;
+        width: 220px;
         height: 220px;
+        align-self: center;
     }
 
     .newsletter form {
